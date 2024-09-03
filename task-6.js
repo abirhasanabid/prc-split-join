@@ -6,7 +6,10 @@
 
 let word = "hello";
 let arr = word.split('');
-for(let i = arr.length-1;i<arr.length;i--){
-    console.log(arr[i]);
+
+let arr1 = [];
+for (let i = arr.length - 1; i >= 0; i--) {
+    const newArr = arr[i];
+    arr1.push(arr[i]);
 }
-// console.log(arr);
+console.log(arr1.join(''));
